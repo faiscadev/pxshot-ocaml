@@ -1,0 +1,34 @@
+(lang dune 3.19)
+(name pxshot)
+(version 0.1.0)
+(sections (lib .) (libexec .) (doc ../../doc/pxshot))
+(files
+ (lib
+  (META
+   dune-package
+   opam
+   pxshot.a
+   pxshot.cma
+   pxshot.cmi
+   pxshot.cmt
+   pxshot.cmti
+   pxshot.cmx
+   pxshot.cmxa
+   pxshot.ml
+   pxshot.mli))
+ (libexec (pxshot.cmxs))
+ (doc (LICENSE README.md)))
+(library
+ (name pxshot)
+ (kind normal)
+ (archives (byte pxshot.cma) (native pxshot.cmxa))
+ (plugins (byte pxshot.cma) (native pxshot.cmxs))
+ (native_archives pxshot.a)
+ (requires cohttp-lwt-unix lwt yojson uri)
+ (main_module_name Pxshot)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name pxshot)
+   (visibility public)
+   (source (path Pxshot) (intf (path pxshot.mli)) (impl (path pxshot.ml))))))

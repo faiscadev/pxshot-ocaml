@@ -1,0 +1,11 @@
+(executable
+ (name basic)
+ (libraries pxshot lwt lwt.unix))
+
+(executable
+ (name stored)
+ (libraries pxshot lwt lwt.unix))
+
+(executable
+ (name usage)
+ (libraries pxshot lwt lwt.unix))

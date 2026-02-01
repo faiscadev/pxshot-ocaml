@@ -1,0 +1,4 @@
+(library
+ (name pxshot)
+ (public_name pxshot)
+ (libraries cohttp-lwt-unix lwt yojson uri))

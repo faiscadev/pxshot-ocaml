@@ -1,0 +1,28 @@
+# dune test
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/lucas/.cache/dune/db
+# Workspace root: /Users/lucas/code/pxshot/sdks/ocaml
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/lucas/.opam/default/bin/ocamlc.opt -config > /var/folders/2p/bh__8jhn5hg_7rsyly8k67y40000gn/T/dune_2db463_output
+$ (cd _build/default/test && ./test_pxshot.exe)
+> Testing `Pxshot'.
+> This run has ID `ZI59FXKF'.
+>
+>   [OK]          unit          0   format_to_string.
+>   [OK]          unit          1   wait_until_to_string.
+>   [OK]          unit          2   error_to_string.
+>   [OK]          unit          3   create_client.
+>   [OK]          unit          4   create_client_with_base_url.
+>
+> Full test results in `~/code/pxshot/sdks/ocaml/_build/default/test/_build/_tests/Pxshot'.
+> Test Successful in 0.001s. 5 tests run.
