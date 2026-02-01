@@ -8,9 +8,9 @@ maintainer: ["Pxshot <support@pxshot.com>"]
 authors: ["Pxshot <support@pxshot.com>"]
 license: "MIT"
 tags: ["screenshot" "api" "pxshot" "web-capture"]
-homepage: "https://github.com/pxshot/pxshot-ocaml"
+homepage: "https://github.com/faiscadev/pxshot-ocaml"
 doc: "https://docs.pxshot.com/sdks/ocaml"
-bug-reports: "https://github.com/pxshot/pxshot-ocaml/issues"
+bug-reports: "https://github.com/faiscadev/pxshot-ocaml/issues"
 depends: [
   "ocaml" {>= "4.14.0"}
   "dune" {>= "3.0" & >= "3.0"}
@@ -36,4 +36,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/pxshot/pxshot-ocaml.git"
+dev-repo: "git+https://github.com/faiscadev/pxshot-ocaml.git"

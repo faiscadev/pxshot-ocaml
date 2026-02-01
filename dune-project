@@ -7,7 +7,7 @@
 (generate_opam_files true)
 
 (source
- (github pxshot/pxshot-ocaml))
+ (github faiscadev/pxshot-ocaml))
 
 (authors "Pxshot <support@pxshot.com>")
 
