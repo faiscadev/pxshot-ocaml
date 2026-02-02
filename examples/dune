@@ -1,3 +1,6 @@
+; Examples - excluded from package build
+; To build examples locally: dune build --root . examples/
+
 (executable
  (name basic)
  (libraries pxshot lwt lwt.unix))
