@@ -7,5 +7,5 @@
  (libraries pxshot lwt lwt.unix))
 
 (executable
- (name usage)
+ (name usage_example)
  (libraries pxshot lwt lwt.unix))
