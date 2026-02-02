@@ -1,7 +1,0 @@
-version = "0.1.0"
-description = ""
-requires = "cohttp-lwt-unix lwt uri yojson"
-archive(byte) = "pxshot.cma"
-archive(native) = "pxshot.cmxa"
-plugin(byte) = "pxshot.cma"
-plugin(native) = "pxshot.cmxs"
